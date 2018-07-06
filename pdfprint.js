@@ -18,7 +18,22 @@ if(booleanCorrectInput === true){
     page.paperSize = {
         format: 'A3',
         orientation: 'landscape',
-        margin: '20px'
+        margin: {
+            top: '50px',
+            left: '50px'
+        },
+        header: {
+            height: "1cm",
+            contents: phantom.callback(function(pageNum, numPages) {
+              return "<h6>Header <span style='float:right'>" + pageNum + " / " + numPages + "</span></h6>";
+            })
+          },
+          footer: {
+            height: "1cm",
+            contents: phantom.callback(function(pageNum, numPages) {
+              return "<h6>Footer <span style='float:right'>" + pageNum + " / " + numPages + "</span></h6>";
+            })
+          }
     };
     page.settings.dpi = "120";
 
