@@ -1,0 +1,28 @@
+{
+  "name": "express-pdf-report",
+  "version": "1.0.0",
+  "description": "this is a report generator for node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tariqulislam/express-pdf-report.git"
+  },
+  "keywords": [
+    "ejs",
+    "phantomjs",
+    "pdf"
+  ],
+  "author": "Tariqul Islam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tariqulislam/express-pdf-report/issues"
+  },
+  "homepage": "https://github.com/tariqulislam/express-pdf-report#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "phantom": "^6.0.3"
+  }
+}
