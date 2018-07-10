@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body>
+    <h1>Record</h1>
+    <table>
+        <thead>
+            <tr>
+                <% Object.keys(columns).forEach(function (key){ %>
+                    <th><%= columns[key] %></th>
+                <% }); %>
+            </tr>
+        </thead>
+        <tbody>
+        <% data.forEach(function(element) { %>
+            <tr>
+                    <% Object.keys(columns).forEach(function (key){ %>
+                        <td><%= element[key] %></td>
+                    <% }); %>
+            </tr>
+        <% }); %>
+      </tbody>
+ </table>
+</body>
+</html>
