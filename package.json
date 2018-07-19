@@ -1,6 +1,6 @@
 {
   "name": "express-pdf-report",
-  "version": "1.0.5",
+  "version": "1.0.17",
   "description": "this is a report generator for node js",
   "main": "index.js",
   "scripts": {
