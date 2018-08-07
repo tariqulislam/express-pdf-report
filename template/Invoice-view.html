@@ -17,7 +17,7 @@
 
 </div>
 <div style="text-align: center">    
-<h1>List View for PDF</h1>
+<h1>Invioce View PDF</h1>
 <h3>Company Name</h3>
 </div>
 <div style="clear: both;height: 10px;"></div>
@@ -50,20 +50,16 @@
     <table style="width:100%;margin:0px; padding:0px;" border="0px" cellspacing="0">
         <thead>
             <tr>
-                    <% Object.keys(columns).forEach(function (key){ %>
-                        <th style="border:1px solid black;padding:5px;"><%= columns[key] %></th>
-                    <% }); %>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Line Total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                    <% data.forEach(function(element) { %>
-                    <tr>
-                       <% Object.keys(columns).forEach(function (key){ %>
-                        <td style="border:1px solid black;padding:5px;"><%= element[key] %></td>
-                       <% }); %>
-                    </tr>
-                    <% }); %>
+               <td colspan="3"></td>
+               <td></td>
             </tr>
         </tbody>
     </table>
