@@ -58,11 +58,11 @@
         <tbody>
             <tr>
                     <% data.forEach(function(element) { %>
-                        <tr>
-                                <% Object.keys(columns).forEach(function (key){ %>
-                                    <td style="border:1px solid black;padding:5px;"><%= element[key] %></td>
-                                <% }); %>
-                        </tr>
+                    <tr>
+                       <% Object.keys(columns).forEach(function (key){ %>
+                        <td style="border:1px solid black;padding:5px;"><%= element[key] %></td>
+                       <% }); %>
+                    </tr>
                     <% }); %>
             </tr>
         </tbody>
